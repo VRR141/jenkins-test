@@ -11,7 +11,7 @@ import java.time.format.DateTimeFormatter;
 public class HelloWorldController {
 
 
-    private String forTest = "now from ubuntu TEST PUSH ot 04.12.2022 №2";
+    private String forTest = "now from ubuntu TEST PUSH ot 04.12.2022 №25";
 
     @RequestMapping("/hello")
     public String helloController(Model model){
