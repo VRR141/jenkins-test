@@ -11,13 +11,13 @@ import java.time.format.DateTimeFormatter;
 public class HelloWorldController {
 
 
-    private String forTest = "now from ubuntu \nTEST PUSH";
+    private String forTest = "now from ubuntu TEST PUSH ot 04.12.2022";
 
     @RequestMapping("/hello")
     public String helloController(Model model){
         String hi = "Hello world!";
         String info = System.getProperty("os.name");
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:m:ss \ndd.MM.u");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss dd.MM.u");
         String time = LocalDateTime.now().format(dtf);
         model.addAttribute("forTest", forTest);
         model.addAttribute("hello", hi);
