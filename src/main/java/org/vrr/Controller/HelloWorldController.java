@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.net.http.HttpRequest;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -11,7 +12,7 @@ import java.time.format.DateTimeFormatter;
 public class HelloWorldController {
 
 
-    private String forTest = "test hook 2";
+    private String forTest = "test hook 2 today";
 
     @RequestMapping("/hello")
     public String helloController(Model model){
